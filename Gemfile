@@ -20,6 +20,9 @@ gem "sprockets-es6"
 gem "title"
 gem "uglifier"
 
+# Use datatables to dynamically filter data
+gem 'jquery-datatables-rails', github: 'rweng/jquery-datatables-rails'
+
 group :development do
   gem "quiet_assets"
   gem "spring"
