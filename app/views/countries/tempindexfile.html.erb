@@ -1,0 +1,27 @@
+<link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.12/css/jquery.dataTables.css">
+  
+<script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.12/js/jquery.dataTables.js"></script>
+
+
+<h1>All Countries</h1>
+
+<table id="country_lists">
+<thead>
+  <tr>
+    <th>Name</th>
+    <th>Capital</th>
+    <th>Region</th>
+    <th>Population</th>
+  </tr>
+</thead>
+<tbody>
+  <% @countries.each do |country| %>
+    <tr>
+      <td><%= country.name %></td>
+      <td><%= country.capital %></td>
+      <td><%= country.region %></td>
+      <td><%= country.population %></td>
+    </tr>
+  <% end %>
+</tbody>
+</table>

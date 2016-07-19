@@ -14,8 +14,6 @@
 //= require jquery_ujs
 //= require_tree .
 //= require dataTables/jquery.dataTables
-bower install --save datatables.net
-bower install --save datatables.net-dt
 
 $(document).ready( function () {
     $('#table_id').DataTable();
