@@ -9,6 +9,7 @@ gem "flutie"
 gem "high_voltage"
 gem "honeybadger"
 gem "jquery-rails"
+gem "jquery-ui-rails"
 gem "newrelic_rpm", ">= 3.9.8"
 gem "pg"
 gem "puma"
@@ -20,6 +21,7 @@ gem "sprockets", ">= 3.0.0"
 gem "sprockets-es6"
 gem "title"
 gem "uglifier"
+gem "will_paginate"
 
 # Use datatables to dynamically filter data
 gem 'jquery-datatables-rails', github: 'rweng/jquery-datatables-rails'
