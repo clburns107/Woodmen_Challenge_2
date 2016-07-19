@@ -1,1 +1,8 @@
-My name is courtney!
+<h1>All Countries</h1>
+
+<% @countries.each do |country|%>
+  <%= country.name %>
+  <%= country.capital %>
+  <%= country.region %>
+  <%= country.population %>
+<% end %>
