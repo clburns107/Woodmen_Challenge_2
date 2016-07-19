@@ -1,20 +1,26 @@
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/ju-1.11.4/jq-2.2.3/dt-1.10.12/b-1.2.1/datatables.min.css"/>
+ 
+<script type="text/javascript" src="https://cdn.datatables.net/v/ju-1.11.4/jq-2.2.3/dt-1.10.12/b-1.2.1/datatables.min.js"></script>
+
+
 <h1>All Countries</h1>
 
-<% @countries.each do |country|%>
-  <%= country.name %>
-  <%= country.capital %>
-  <%= country.region %>
-  <%= country.population %>
-<% end %>
-
-<table id="countries" class="display" data-source="/geodata/city_links_for_state_of/NE.json">
-        <thead>
-          <tr>
-            <th>Name</th>
-            <th>Capital</th>
-            <th>Region</th>
-          </tr>
-        </thead>
-        <tbody>
-        </tbody>
-       </table>
+<table id="country_lists">
+<thead>
+  <tr>
+    <th>Name</th>
+    <th>Capital</th>
+    <th>Region</th>
+  </tr>
+</thead>
+<tbody>
+  <% @countries.each do |country| %>
+    <tr>
+      <td><%= country.name %></td>
+      <td><%= country.capital %></td>
+      <td><%= country.region %></td>
+      <td><%= country.population %></td>
+    </tr>
+  <% end %>
+</tbody>
+</table>
