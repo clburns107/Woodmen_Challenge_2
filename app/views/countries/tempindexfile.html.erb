@@ -25,3 +25,39 @@
   <% end %>
 </tbody>
 </table>
+
+
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+  </head>
+    <body>
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js">
+      </script>
+
+      <script>
+        /*
+        $.getJSON('/countries.json', function(data){
+          console.log(data);
+        });
+        */
+
+        $.ajax({
+          url: '/countries.json',
+          dataType: 'json',
+          type: 'get',
+          cache: false,
+          success: function(data) {
+            $(data.countries).each(function(index,value){
+              console.log(value.name);
+
+            });
+          }
+        });
+      </script>
+
+    </body>
+</html>
