@@ -20,7 +20,7 @@ $(document).ready( function () {
     $('#countries_list').DataTable();
 } );
 
-var data = { "countries" : [
+var data = { "countries_list" : [
         {
             "name": "Afghanistan",
             "capital": "Kabul",
@@ -174,6 +174,6 @@ var data = { "countries" : [
         } ] }
 
 
-$(data.scores).each(function(index, element){  
-     $('#scores').append('<tr><td> '+element[0]+' </td> <td> '+element[1]+' </td></tr>');       
+$(data.countries_list).each(function(index, element){  
+     $('#countries_list').append('<tr><td> '+element.name[0]+' </td> <td> '+element.name[1]+' </td></tr>');       
 })
