@@ -8,8 +8,23 @@
       </script>
 
       <script>
+        /*
         $.getJSON('/countries.json', function(data){
           console.log(data);
+        });
+        */
+
+        $.ajax({
+          url: '/countries.json',
+          dataType: 'json',
+          type: 'get',
+          cache: false,
+          success: function(data) {
+            $(data.countries).each(function(index,value){
+              console.log(value.name);
+
+            });
+          }
         });
       </script>
 
